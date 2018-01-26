@@ -1,0 +1,4 @@
+<resources>
+  <string name="app_name">ToDo</string>
+  <string name="msg_empty">placeholder text</string>
+</resources>
