@@ -14,14 +14,14 @@ public abstract class ToDoModel {
   public abstract Calendar createdOn();
 
   static Builder builder() {
-    return(new AutoValue_ToDoModel.Builder());
+    return new AutoValue_ToDoModel.Builder();
   }
 
   public static Builder creator() {
-    return(builder()
+    return builder()
       .isCompleted(false)
       .id(UUID.randomUUID().toString())
-      .createdOn(Calendar.getInstance()));
+      .createdOn(Calendar.getInstance());
   }
 
   @AutoValue.Builder
