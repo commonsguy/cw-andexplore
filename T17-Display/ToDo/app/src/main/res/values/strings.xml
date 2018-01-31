@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">ToDo</string>
+  <string name="msg_empty">placeholder text</string>
+  <string name="menu_about">About</string>
+  <string name="is_completed">Item is completed</string>
+  <string name="created_on">Created on:</string>
+</resources>
