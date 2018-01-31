@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">ToDo</string>
+  <string name="msg_empty">placeholder text</string>
+  <string name="menu_about">About</string>
+</resources>
