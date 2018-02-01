@@ -36,8 +36,6 @@
       android:hint="@string/desc"
       android:inputType="text"
       android:text="@{model.description()}"
-      android:textSize="@dimen/desc_view_size"
-      android:textStyle="bold"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toEndOf="@+id/isCompleted"
       app:layout_constraintTop_toTopOf="parent" />
@@ -55,7 +53,6 @@
       android:gravity="top|start"
       android:hint="@string/notes"
       android:inputType="textMultiLine"
-      android:textSize="@dimen/notes_size"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
