@@ -23,7 +23,7 @@ public class DisplayFragment extends Fragment {
       result.setArguments(args);
     }
 
-    return(result);
+    return result;
   }
 
   @Nullable
@@ -33,7 +33,7 @@ public class DisplayFragment extends Fragment {
                            @Nullable Bundle savedInstanceState) {
     binding=TodoDisplayBinding.inflate(getLayoutInflater(), container, false);
 
-    return(binding.getRoot());
+    return binding.getRoot();
   }
 
   @Override
@@ -49,6 +49,6 @@ public class DisplayFragment extends Fragment {
   }
 
   private String getModelId() {
-    return(getArguments().getString(ARG_ID));
+    return getArguments().getString(ARG_ID);
   }
 }

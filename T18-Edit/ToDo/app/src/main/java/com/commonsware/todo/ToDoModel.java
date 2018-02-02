@@ -25,12 +25,12 @@ public abstract class ToDoModel {
   }
 
   public Builder toBuilder() {
-    return(builder()
+    return builder()
       .id(id())
       .isCompleted(isCompleted())
       .description(description())
       .notes(notes())
-      .createdOn(createdOn()));
+      .createdOn(createdOn());
   }
 
   @AutoValue.Builder

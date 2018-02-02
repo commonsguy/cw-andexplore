@@ -22,7 +22,7 @@ public class EditFragment extends Fragment {
       result.setArguments(args);
     }
 
-    return(result);
+    return result;
   }
 
   @Nullable
@@ -32,7 +32,7 @@ public class EditFragment extends Fragment {
                            @Nullable Bundle savedInstanceState) {
     binding=TodoEditBinding.inflate(getLayoutInflater(), container, false);
 
-    return(binding.getRoot());
+    return binding.getRoot();
   }
 
   @Override
@@ -43,6 +43,6 @@ public class EditFragment extends Fragment {
   }
 
   private String getModelId() {
-    return(getArguments().getString(ARG_ID));
+    return getArguments().getString(ARG_ID);
   }
 }

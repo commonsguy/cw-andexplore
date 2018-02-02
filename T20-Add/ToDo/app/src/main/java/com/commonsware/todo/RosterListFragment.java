@@ -41,10 +41,10 @@ public class RosterListFragment extends Fragment {
   public boolean onOptionsItemSelected(MenuItem item) {
     if (item.getItemId()==R.id.add) {
       ((Contract)getActivity()).addModel();
-      return(true);
+      return true;
     }
 
-    return(super.onOptionsItemSelected(item));
+    return super.onOptionsItemSelected(item);
   }
 
   @Nullable
