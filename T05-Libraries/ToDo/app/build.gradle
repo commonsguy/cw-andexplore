@@ -22,7 +22,7 @@ android {
     }
 }
 
-def supportVer="27.0.2"
+def supportVer="27.1.0"
 
 dependencies {
     implementation "com.android.support:recyclerview-v7:$supportVer"

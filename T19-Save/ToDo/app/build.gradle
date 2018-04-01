@@ -21,17 +21,16 @@ android {
     targetCompatibility JavaVersion.VERSION_1_8
   }
   dataBinding {
-    enabled = true
+    enabled=true
   }
 }
 
-def supportVer = "27.0.2"
+def supportVer="27.1.0"
 def autoValueVer="1.5.1"
 
 dependencies {
   implementation "com.android.support:recyclerview-v7:$supportVer"
   implementation "com.android.support:support-fragment:$supportVer"
-  implementation "com.android.support:support-v4:$supportVer"
   implementation 'com.android.support.constraint:constraint-layout:1.0.2'
   compileOnly "com.google.auto.value:auto-value:$autoValueVer"
   annotationProcessor "com.google.auto.value:auto-value:$autoValueVer"

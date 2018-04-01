@@ -22,7 +22,7 @@ android {
   }
 }
 
-def supportVer = "27.0.2"
+def supportVer="27.1.0"
 def autoValueVer="1.5.1"
 
 dependencies {
