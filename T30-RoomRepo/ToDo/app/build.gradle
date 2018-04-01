@@ -1,0 +1,49 @@
+apply plugin: 'com.android.application'
+
+android {
+  compileSdkVersion 27
+  defaultConfig {
+    applicationId "com.commonsware.todo"
+    minSdkVersion 21
+    targetSdkVersion 27
+    versionCode 1
+    versionName "1.0"
+    testApplicationId "com.commonsware.todo.test"
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+  dataBinding {
+    enabled=true
+  }
+}
+
+def supportVer="27.1.0"
+def autoValueVer="1.5.1"
+def archVer="1.1.1"
+def roomVer="1.0.0"
+
+dependencies {
+  implementation "com.android.support:recyclerview-v7:$supportVer"
+  implementation "com.android.support:support-fragment:$supportVer"
+  implementation "android.arch.lifecycle:extensions:$archVer"
+  implementation "android.arch.lifecycle:reactivestreams:$archVer"
+  implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+  implementation "io.reactivex.rxjava2:rxjava:2.1.7"
+  implementation "android.arch.persistence.room:runtime:$roomVer"
+  implementation "android.arch.persistence.room:rxjava2:$roomVer"
+  annotationProcessor "android.arch.persistence.room:compiler:$roomVer"
+  compileOnly "com.google.auto.value:auto-value:$autoValueVer"
+  annotationProcessor "com.google.auto.value:auto-value:$autoValueVer"
+  testImplementation 'junit:junit:4.12'
+  androidTestImplementation 'com.android.support.test:runner:1.0.1'
+  androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
