@@ -83,6 +83,9 @@ public class RosterListFragment extends Fragment {
     if (rv.getAdapter().getItemCount()>0) {
       empty.setVisibility(View.GONE);
     }
+    else {
+      empty.setVisibility(View.VISIBLE);
+    }
   }
 
   void replace(ToDoModel model) {
