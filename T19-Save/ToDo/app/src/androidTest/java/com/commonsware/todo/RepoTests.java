@@ -20,7 +20,7 @@ public class RepoTests {
   }
 
   @Test
-  public void getAll() throws Exception {
+  public void getAll() {
     assertEquals(3, repo.all().size());
   }
 
