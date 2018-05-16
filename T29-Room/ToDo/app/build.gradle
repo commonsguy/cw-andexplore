@@ -25,17 +25,17 @@ android {
   }
 }
 
-def supportVer="27.1.0"
+def supportVer="27.1.1"
 def autoValueVer="1.5.1"
 def archVer="1.1.1"
-def roomVer="1.0.0"
+def roomVer="1.1.0"
 
 dependencies {
   implementation "com.android.support:recyclerview-v7:$supportVer"
   implementation "com.android.support:support-fragment:$supportVer"
   implementation "android.arch.lifecycle:extensions:$archVer"
   implementation "android.arch.lifecycle:reactivestreams:$archVer"
-  implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+  implementation 'com.android.support.constraint:constraint-layout:1.1.0'
   implementation "io.reactivex.rxjava2:rxjava:2.1.7"
   implementation "android.arch.persistence.room:runtime:$roomVer"
   implementation "android.arch.persistence.room:rxjava2:$roomVer"
@@ -43,6 +43,6 @@ dependencies {
   compileOnly "com.google.auto.value:auto-value:$autoValueVer"
   annotationProcessor "com.google.auto.value:auto-value:$autoValueVer"
   testImplementation 'junit:junit:4.12'
-  androidTestImplementation 'com.android.support.test:runner:1.0.1'
-  androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+  androidTestImplementation 'com.android.support.test:runner:1.0.2'
+  androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
