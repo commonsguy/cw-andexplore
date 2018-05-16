@@ -85,10 +85,12 @@ public class DisplayFragment extends Fragment {
     if (state!=null) {
       ToDoModel model=state.current();
 
-      binding.setModel(model);
-      binding.setCreatedOn(DateUtils.getRelativeDateTimeString(getActivity(),
-        model.createdOn().getTimeInMillis(), DateUtils.MINUTE_IN_MILLIS,
-        DateUtils.WEEK_IN_MILLIS, 0));
+      if (model!=null) {
+        binding.setModel(model);
+        binding.setCreatedOn(DateUtils.getRelativeDateTimeString(getActivity(),
+          model.createdOn().getTimeInMillis(), DateUtils.MINUTE_IN_MILLIS,
+          DateUtils.WEEK_IN_MILLIS, 0));
+      }
     }
   }
 }
