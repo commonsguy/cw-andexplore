@@ -4,20 +4,9 @@
 is an integrated set of tutorials, guiding you step-by-step in building an 
 Android application. 
 
-This book is updated a few times a year and is available through
-[the Warescription](https://commonsware.com/warescription) program. Subscribers also have access to office
-hours chats and other benefits.
+The current source code for this book can be found in [this repository](https://gitlab.com/commonsguy/cw-andexplore). That GitLab repository has the code for the second-generation *Exploring Android*, demonstrating Kotlin and the Jetpack.
 
-This repository contains the source code for the sample apps profiled in the book. These 
-samples are updated as the book is, with `git` tags applied to tie sample code versions to book
-versions.
-
-The book, and the samples, were written by Mark Murphy. You may also have run into him through
-Stack Overflow:
-
-<a href="http://stackoverflow.com/users/115145/commonsware">
-<img src="http://stackoverflow.com/users/flair/115145.png" width="208" height="58" alt="profile for CommonsWare at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for CommonsWare at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-</a>
+The repository that you are viewing is for the first-generation *Exploring Android*, demonstrating Java.
 
 All of the source code in this archive is licensed under the
 Apache 2.0 license except as noted.
